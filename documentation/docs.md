@@ -1,7 +1,6 @@
 # [CA] CUSTOMER AUTO TOOL BY JANE
 Tool Auto Hỗ trợ hoạt động chăm sóc khách hàng.
 ## 1. PROJECT CHARTER
-
 ### 1.1 Thông tin dự án
 - **Tên dự án**: ca_customer_auto_tool_by_Jane
 - **Mã dự án**: CA-20260101
