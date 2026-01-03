@@ -71,6 +71,10 @@ def log_info(message: str):
     """Log INFO level message."""
     logger.log("INFO", message)
 
+def log_critical(message: str):
+    """Log CRITICAL level message."""
+    logger.log("CRITICAL", message)
+
 def log_error(message: str):
     """Log ERROR level message."""
     logger.log("ERROR", message)

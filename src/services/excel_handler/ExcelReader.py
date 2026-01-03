@@ -1,7 +1,11 @@
 import pandas as pd
 from typing import List, Tuple, Optional
-from Logger import log_info, log_error, log_warning
-
+import sys
+from pathlib import Path
+# Add project root to Python path
+project_root = Path(__file__).parent.parent.parent.parent  # Go up 3 levels to project root
+sys.path.insert(0, str(project_root))
+from src.services.logger_service.Logger import log_info, log_error, log_warning
 
 class ExcelReader:
     def __init__(self, file_path: str, required_cols_lst: Optional[List[str]] = None):
@@ -48,8 +52,7 @@ class ExcelReader:
         
 # TESTING
 if __name__ == "__main__":
-    from pathlib import Path
-    file_path = Path(__file__).parent.parent.parent / "data" / "input" / "phone_check.xlsx"
+    file_path = Path(__file__).parent.parent.parent.parent / "data" / "input" / "phone_check.xlsx"
     print("=== Testing ExcelReader with File Logging ===")
     
     # Test case 1: Successful read
