@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# Data
+data/
+
+# Biến môi trường
+.env
+.ca-venv/
